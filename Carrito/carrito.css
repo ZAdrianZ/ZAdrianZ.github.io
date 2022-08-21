@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   background-color: gainsboro;
+}
+/*Seccion 1*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image:url(/media/fondo-header\ 3.jpg);
+    background-size: 100vw 48vh;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    padding: 30px;
+}
+
+header .nombre-cafeteria {
+    font-size: 54px;
+    color: black;
+}
+
+.logo img {
+    height: 8em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover {
+    color: white;
+}
+/*estilos del menu desplegable*/
+nav {
+    max-width: 900px;
+    font-size: 20px;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+}
+.menu-horizontal li a {
+display: block;
+text-decoration: none;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 170px;
+    background-color: black;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+background-color: #333;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px ;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    font-weight: bold;
+}
+i {
+    font-size: 30px;
+}
+a {
+    color: black;
+}
+@media screen and (max-width: 769px) and (min-width: 481px){
+    img.logo-cat{
+        font-size: 1em;
+    }
+    h2.nombre-cafeteria{
+        font-size: 2.50em;
+        margin-right: 130px;
+    }
+    ul.menu-horizontal{
+        position: absolute;
+        right: 120px;
+        top: 150px;
+        font-size: 1.10em;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 1px){
+    img.logo-cat{
+        font-size: 0.70em;
+    }
+    h2.nombre-cafeteria{
+        font-size: 2.50em;
+    }
+    ul.menu-horizontal{
+        position: absolute;
+        right: 30px;
+        top:150px
+    }
+}
